@@ -1,6 +1,7 @@
 function click() {
   let input = document.querySelector('.content__input');
-  let audio = document.querySelector('audio').play();
+  let yes = document.querySelector('.yes');
+  let no = document.querySelector('.no');
   // let out = document.querySelector('.content__out');
   let val = input.value;
       val = parseInt(val);
@@ -11,10 +12,11 @@ function click() {
   else {
     if (val == random) {
       out = document.querySelector('.content__out-1 img').style.display = 'block';
-      audio;
+      yes.play();
       setTimeout(location.reload.bind(location), 10000);
     }
     else {
+      no.play();
       alert('Не верно!!!');
       input.value = '';
       // out = document.querySelector('.content__out-2 img').style.display = 'block';
