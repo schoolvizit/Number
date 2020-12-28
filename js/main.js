@@ -2,7 +2,7 @@ function click() {
   let input = document.querySelector('.content__input');
   let yes = document.querySelector('.yes');
   let no = document.querySelector('.no');
-  // let out = document.querySelector('.content__out');
+  let out = document.querySelector('.content__out-1 img');
   let val = input.value;
       val = parseInt(val);
 
@@ -11,7 +11,7 @@ function click() {
   }
   else {
     if (val == random) {
-      out = document.querySelector('.content__out-1 img').style.display = 'block';
+      out.style.display = 'block';
       yes.play();
       setTimeout(location.reload.bind(location), 10000);
     }
