@@ -99,6 +99,27 @@ section {
   background-repeat: no-repeat;
 }
 
+audio {
+  opacity: .3;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 200px;
+  height: 30px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #d9ff00;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  font-size: 0px;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  font-size: 0px;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

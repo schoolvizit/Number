@@ -1,5 +1,6 @@
 function click() {
   let input = document.querySelector('.content__input');
+  let audio = document.querySelector('audio').play();
   // let out = document.querySelector('.content__out');
   let val = input.value;
       val = parseInt(val);
@@ -10,7 +11,7 @@ function click() {
   else {
     if (val == random) {
       out = document.querySelector('.content__out-1 img').style.display = 'block';
-      
+      audio;
       setTimeout(location.reload.bind(location), 10000);
     }
     else {
@@ -28,3 +29,6 @@ let random = Math.random();
     random = random * 10;
     random = Math.round(random);
     console.log(random);
+
+
+
