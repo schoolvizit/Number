@@ -172,11 +172,25 @@ input[type='number'] {
 .content__out-1 img {
   position: absolute;
   bottom: -20px;
-  right: 50%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  right: -240px;
   max-width: 500px;
   display: none;
+  -webkit-animation: img .8s linear 0s infinite;
+          animation: img .8s linear 0s infinite;
+}
+
+@-webkit-keyframes img {
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes img {
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
 }
 
 .content__input {
